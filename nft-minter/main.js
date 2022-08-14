@@ -8,7 +8,7 @@ let user = Moralis.User.current();
 async function login() {
   if (!user) {
    try {
-      user = await Moralis.authenticate({ signingMessage: "Hello World!" })
+      user = await Moralis.authenticate({ signingMessage: "Connect to the Blockchain to mint some rad NFT art!" })
       initApp();
    } catch(error) {
      console.log(error)
